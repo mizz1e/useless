@@ -1,0 +1,8 @@
+[package]
+name = "screenshot"
+version = "0.0.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.20", default-features = false, features = ["color", "derive", "env", "error-context", "help", "std", "suggestions", "unicode", "usage", "wrap_help"] }
+tempfile = { version = "3.13.0", default-features = false }
