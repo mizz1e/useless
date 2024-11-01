@@ -96,5 +96,8 @@ fn screenshot_and_copy(region: Option<String>) -> io::Result<()> {
         .stdin(child.stdout.take().unwrap())
         .spawn()?
         .wait()?;
+
+    child.wait()?;
+
     Ok(())
 }
